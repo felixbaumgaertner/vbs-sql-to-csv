@@ -2,7 +2,6 @@
 sql = "SELECT * FROM your_table"
 csvFilePath = "path\to\destination\results.csv"
 seperator = ";"
-
 server = "192.168.178.100"
 database = "your_database"
 user = "your_user"
