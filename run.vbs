@@ -35,7 +35,6 @@ objCSVFile.WriteLine
 ' Loop through query result
 While NOT resultSet.EOF
 	j = 1
-    ' Loop through each field/column
     For Each field In resultSet.Fields
 		If j = colCounter Then
 			objCSVFile.Write field.Value
