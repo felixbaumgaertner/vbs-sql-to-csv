@@ -1,4 +1,4 @@
-' Configure variables
+' Configure variables here
 sql = "SELECT * FROM your_table"
 csvFilePath = "path\to\destination\results.csv"
 seperator = ";"
