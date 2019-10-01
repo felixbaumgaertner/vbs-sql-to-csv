@@ -15,12 +15,19 @@ connect.Open
 Set resultSet = connect.Execute(sql)
 
 
-' Create new CSV file
+' Setup enviroment variables
 Set objFSO = CreateObject("Scripting.FileSystemObject")
+colCounter = resultSet.Fields.Count
+
+' Delete old CSV file
+If objFSO.FileExists(csvFilePath) Then
+	objFSO.DeleteFile csvFilePath
+End If
+
+' Create new CSV file
 Set objCSVFile = objFSO.CreateTextFile(csvFilePath, True)
 
 ' Get all column names for reference
-colCounter = resultSet.Fields.Count
 i = 1
 For each field in resultSet.Fields
 	If i = colCounter Then
