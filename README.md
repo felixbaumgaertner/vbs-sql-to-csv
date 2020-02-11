@@ -21,5 +21,6 @@ All of them have to be changed in order to run, only the seperator will probably
 ### Where to get the information
 
 * *sql* - here goes your sql statement
-* *csvFilePath* & *seperator* - this is the **absolute filepath** to your csv file and its seperator
+* *csvFilePath* - this is the **absolute filepath** to the place where the csv file will be created (e.g. "C:\Users\felixbaumgaertner\Desktop\TestExport.csv")
+* *seperator* - default seperator ";" can be changed to "," or whatever you like
 * *server*, *database*, *user* & *password* - those information define which database server you want to connect to (ask your administrator or technical support for this details)
